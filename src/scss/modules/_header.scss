@@ -1,0 +1,49 @@
+.header {
+  z-index: 10;
+  height: 56px;
+  position: fixed;
+  width: 100%;
+  background-color: var(--color_background);
+
+  &__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    min-width: 70px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__notifications {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover{
+      > svg {
+        width: 18px;
+        fill: var(--color_black)
+        
+      }
+    }
+    > svg {
+    transition: all .2s;
+      width: 18px;
+      fill: var(--color_blue);
+      
+    }
+  }
+
+  &__search {
+    width: 100%;
+  }
+
+}

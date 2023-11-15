@@ -1,0 +1,22 @@
+
+#search-autocomplete {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 10px;
+  position: absolute;
+  z-index: 1;
+  top: 31px;
+  width: 300px;
+}
+
+.search-autocomplete__option{
+  cursor: pointer;
+  transition: all .2s;
+  padding: 7px 13px;
+  word-break: break-word;
+  background: var(--color_white);
+  &:hover{
+    background: var(--color_blue);
+    color: var(--color_white);
+  }
+}
